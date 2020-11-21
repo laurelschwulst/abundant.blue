@@ -1,23 +1,110 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Abundant Blue</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <link rel="icon" type="image/png" href="flower-person-blue.png" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background: #32006a;
+        color: white;
+        margin: 0;
+        padding: 1em;
+        padding-bottom: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+      }
+      a {
+        color: white;
+      }
+      figure {
+        margin: 2em;
+      }
+      .emails {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .emails div {
+        margin: 0 2.5em;
+      }
+      .projects {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .projects div {
+        margin: 2.5em 3.5em;
+        flex-grow: 0;
+      }
+      .welcome {
+        padding: 2.5em;
+        padding-bottom: 3.5em;
+      }
+      @media (max-width: 615px) {
+        body {
+          display: block;
+        }
+        .emails,
+        .projects {
+          flex-direction: column-reverse;
+        }
+        .emails div {
+          margin: 2.5em;
+        }
+        .welcome {
+          padding-bottom: 1em;
+        }
+      }
+    </style>
+  </head>
 
-<head>
-  <title>Abundant Blue</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <style>
-    body { background: navy; }
-  </style>
-</head>
-
-<body>
-
-  Abundant Blue
-
-  <script>
-    /* JS goes here */
-  </script>
-
-</body>
-
+  <body>
+    <main>
+      <div class="welcome">Welcome ... !</div>
+      <div class="emails">
+        <div>laurel@abundant.blue</div>
+        <img
+          src="flower-person.png"
+          alt="a white on blue pencil drawing of a person surrounded by a flower"
+          width="150"
+          height="150"
+        />
+        <div>taichi@abundant.blue</div>
+      </div>
+      <div class="projects">
+        <div>
+          <a href="https://artistsspace.org" target="_blank"
+            >https://artistsspace.org</a
+          ><br /><br />
+          <a href="https://artistsspace.org/about-this-website" target="_blank"
+            >^ about ^</a
+          >
+        </div>
+        <div>
+          <a href="https://alt-text-as-poetry.net" target="_blank"
+            >https://alt-text-as-poetry.net</a
+          ><br /><br />
+          <a
+            href="https://alt-text-as-poetry.net/#about-this-site"
+            target="_blank"
+            >^ about ^</a
+          >
+        </div>
+      </div>
+    </main>
+    <script>
+      /* JS goes here */
+    </script>
+  </body>
 </html>
