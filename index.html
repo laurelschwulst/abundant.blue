@@ -34,26 +34,40 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-bottom: 50px;
       }
       .emails div {
         margin: 0 2.5em;
       }
       .projects {
+        margin-top: -150px;
         display: flex;
         align-items: center;
         justify-content: center;
       }
       .projects div {
-        margin: 2.5em 3.5em;
+        margin: 2.5em 125px;
         flex-grow: 0;
+      }
+      .newsletter {
+        margin-top: 3.5em;
       }
       .welcome {
         padding: 2.5em;
         padding-bottom: 3.5em;
       }
-      @media (max-width: 615px) {
+      @media (max-width: 800px) {
         body {
           display: block;
+        }
+        .emails {
+          margin-bottom: 0;
+        }
+        .projects {
+          margin-top: 0;
+        }
+        .newsletter {
+          margin-top: 2.5em;
         }
         .emails,
         .projects {
@@ -72,17 +86,17 @@
 
   <body>
     <main>
-      <div class="welcome">Welcome ... !</div>
+      <!-- <div class="welcome">Welcome ... !</div> -->
       <div class="emails">
         <div>laurel@abundant.blue</div>
-        <img
-          src="flower-person.png"
-          alt="a white on blue pencil drawing of a person surrounded by a flower"
-          width="150"
-          height="150"
-        />
         <div>taichi@abundant.blue</div>
       </div>
+      <img
+        src="flower-person.png"
+        alt="a white on blue pencil drawing of a person surrounded by a flower"
+        width="150"
+        height="150"
+      />
       <div class="projects">
         <div>
           <a href="https://artistsspace.org" target="_blank"
@@ -103,8 +117,10 @@
           >
         </div>
       </div>
-      <div>
-        <a href="https://tinyletter.com/abundant-blue" target="_blank">Newsletter</a>
+      <div class="newsletter">
+        <a href="https://tinyletter.com/abundant-blue" target="_blank"
+          >Subscribe to our newsletter</a
+        >
       </div>
     </main>
     <script>
